@@ -1,7 +1,27 @@
 import React from "react";
+import { useState } from "react";
 import { BrowserRouter } from "react-router-dom";
+import { useForm } from "react-hook-form";
+
+
+
 
 const Login = () => {
+
+    /*const[email,setEmail] = useState("");
+    const[password,setPassword] = useState("");
+    const addNewLogin = () => {
+
+        setEmail("");
+        setPassword("");
+        onLoginAdded({
+        email:email,
+        password:password,
+        });
+
+    };*/
+
+
     return (
         <div>
             <main>
@@ -14,13 +34,15 @@ const Login = () => {
                         </div>
                     </div>
                     <div className='order-div animate__animated animate__fadeInLeft' style={{ animationDuration: "2s" }}>
+                        
+                        
                         <form>
                             <div className='form-group row mt-3'>
                                 <label for='inputEmail3' className='col-sm-4 col-md-4 col-lg-2 col-form-label sd'>
                                     Email
                                 </label>
                                 <div className='col-sm-10'>
-                                    <input type='email' className='form-control' id='inputEmail3' placeholder='Email' />
+                                    <input  className='form-control'/>
                                 </div>
                             </div>
                             <div className='form-group row mt-3'>
@@ -28,7 +50,7 @@ const Login = () => {
                                     Password
                                 </label>
                                 <div className='col-sm-10'>
-                                    <input type='password' className='form-control' id='inputPassword3' placeholder='Password' />
+                                    <input className='form-control' placeholder='Password' type="password"/>
                                 </div>
                             </div>
                             <div className='form-group row mt-4'>
@@ -44,6 +66,10 @@ const Login = () => {
                                 </BrowserRouter> */}
                             </div>
                         </form>
+
+
+
+
                     </div>
                 </div>
             </main>
