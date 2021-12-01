@@ -9,10 +9,10 @@ const Login = () => {
         const [emailError, setEmailError] = useState('');
         const validateEmail = (e) => {
 
-            var email = e.traget.value;
+            var email = e.target.value;
 
             if(validator.isEmail(email)){
-                setEmailError('Valid Email')
+                setEmailError('')
             } else {
                 setEmailError('Enter valid!!')
             }

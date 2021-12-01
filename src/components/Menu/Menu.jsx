@@ -78,12 +78,14 @@ const Menu = () => {
                             </form>
                         </div>
 
-                        <div className='row mt-5'>
-                            <div className='col-lg-4 col-sm-4 col-md-4 col-4 px-5 small-padding-cards animate__animated animate__fadeInLeft' style={{ animationDuration: "2s" }}>
+                        <div className=' mt-5'>
+                            {/* //<div className='col-lg-4 col-sm-4 col-md-4 col-4 px-5 small-padding-cards animate__animated animate__fadeInLeft' style={{ animationDuration: "2s" }}>*} */}
                                 <PancakeList pancakeList={pancakes} />
-                            </div>
+                            {/* </div> */}
                         </div>
                     </div>
+
+                    <div className='col-md-2'></div>
                 </div>
             </div>
         </main>

@@ -4,6 +4,8 @@
 #MainCard {
     box-shadow: 1px 1px 8px #dda15e;
     transition: 1000ms;
+    display: inline-block;
+    margin: 5px;
 }
 #MainCard:hover {
     background-color: #fdf6c360;
