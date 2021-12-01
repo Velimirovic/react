@@ -3,19 +3,6 @@ import { BrowserRouter, Link } from "react-router-dom";
 import "./Login.css";
 
 const Login = () => {
-    /*const[email,setEmail] = useState("");
-    const[password,setPassword] = useState("");
-    const addNewLogin = () => {
-
-        setEmail("");
-        setPassword("");
-        onLoginAdded({
-        email:email,
-        password:password,
-        });
-
-    };*/
-
     return (
         <div>
             <main>
@@ -47,7 +34,7 @@ const Login = () => {
                             </div>
                             <div className='form-group row mt-4'>
                                 <div className='col-sm-10'>
-                                    <button type='submit' className='btn btn-dark'>
+                                    <button type='submit' className='btn btn-dark' id='submit'>
                                         Sign in
                                     </button>
                                 </div>
@@ -59,6 +46,7 @@ const Login = () => {
                     </div>
                 </div>
             </main>
+            <script src='Validation.js'></script>
         </div>
     );
 };
