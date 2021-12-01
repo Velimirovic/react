@@ -16,51 +16,6 @@ import Register from "./components/Register/Register";
 import { useState } from "react";
 
 const App = () => {
-    // const [pancakes, setPancakes] = useState([]);
-
-    // const getData = () => {
-    //     fetch(BACKEND_URL)
-    //         .then((response) => response.json())
-    //         .then((data) => setPancakes(data));
-    // };
-
-    // useEffect(() => getData(), []);
-
-    // const onTodoAdded = (pancake) => {
-    //     fetch(BACKEND_URL, {
-    //         method: "POST",
-    //         body: JSON.stringify({
-    //             name: pancake.name,
-    //             price: pancake.price,
-    //             description: "Cookie, Orea, Banana, Strawberry, Chocolate, Something",
-    //             pancakeType: pancake.pancakeType,
-    //             maker: pancake.maker,
-    //         }),
-    //         headers: {
-    //             "Content-type": "application/json; charset=UTF-8",
-    //         },
-    //     })
-    //         .then((response) => response.json())
-    //         .then((data) => {
-    //             let newPancakes = [...pancakes, data];
-    //             setTodos(newPancakes);
-    //         });
-    // };
-
-    // return (
-    // <>
-    // <BrowserRouter>
-    //   <div>
-    //     <Header />
-    //   </div>
-    //   <Routes>
-    //     <Route path="/" element={<TodoContainer onTodoAdded={onTodoAdded} todos={todos}/>}/>
-    //     <Route path="/about" element={<About/>}/>
-    //   </Routes>
-    // </BrowserRouter>
-    // </>
-
-    // );
 
     return (
         <div className='App'>

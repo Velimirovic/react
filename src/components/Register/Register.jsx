@@ -1,9 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import Login from "../Login/Login";
 import { BrowserRouter, Router, Link } from "react-router-dom";
 import "./Register.css";
+import validator from 'validator';
 
 const Register = () => {
+
+
+    const [emailError, setEmailError] = useState('');
+    const validateEmail = (e) => {
+
+        var email = e.target.value;
+
+        if(validator.isEmail(email)){
+            setEmailError('')
+        } else {
+            setEmailError('Enter valid!!')
+        }
+    }
+
+         const [passError, setPassError] = useState('');
+        const validatePass = (e) => {
+
+            var password = e.target.value;
+
+            if(validator.isStrongPassword(password)){
+                setPassError('')
+            } else {
+                setPassError('More then 8 char, Uppercase, Number, Symbol ')
+            }
+        }
+
+
+
+
+
     return (
         <div>
             <main>
@@ -20,7 +51,13 @@ const Register = () => {
                                     Email
                                 </label>
                                 <div className='col-sm-10'>
-                                    <input type='email' className='form-control' id='inputEmail3' placeholder='Email' />
+                                    <input type='email' className='form-control' id='inputEmail3' placeholder='Email' onBlur={(e) => validateEmail(e)}/>
+                                    <span 
+                                        style={{
+                                            fontWeight:'bold',
+                                            color: 'red',
+                                        }}
+                                    >{emailError}</span>
                                 </div>
                             </div>
                             <div className='form-group row mt-3'>
@@ -36,7 +73,13 @@ const Register = () => {
                                     Password
                                 </label>
                                 <div className='col-sm-10'>
-                                    <input type='password' className='form-control' id='inputPassword3' placeholder='Password' />
+                                    <input type='password' className='form-control' id='inputPassword3' placeholder='Password' onBlur={(e) => validatePass(e)}/>
+                                    <span 
+                                        style={{
+                                            fontWeight:'bold',
+                                            color: 'red',
+                                        }}
+                                    >{passError}</span>   
                                 </div>
                             </div>
                             <div className='form-group row mt-3'>

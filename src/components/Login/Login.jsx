@@ -18,6 +18,18 @@ const Login = () => {
             }
         }
 
+        const [passError, setPassError] = useState('');
+        const validatePass = (e) => {
+
+            var password = e.target.value;
+
+            if(validator.isStrongPassword(password)){
+                setPassError('')
+            } else {
+                setPassError('More then 8 char, Uppercase, Number, Symbol ')
+            }
+        }
+
 
     return (
         <div>
@@ -38,7 +50,7 @@ const Login = () => {
                                 </label>
                                 <div className='col-sm-10'>
                                     <input  className='form-control' type="text" id='userEmail' placeholder='Email' 
-                                    onChange={(e) => validateEmail(e)}>
+                                    onBlur={(e) => validateEmail(e)}>
                                     </input>
                                     <span 
                                         style={{
@@ -53,7 +65,13 @@ const Login = () => {
                                     Password
                                 </label>
                                 <div className='col-sm-10'>
-                                    <input className='form-control' placeholder='Password' type='password' />
+                                    <input className='form-control' placeholder='Password' type='password' onBlur={(e) => validatePass(e)} />
+                                    <span 
+                                        style={{
+                                            fontWeight:'bold',
+                                            color: 'red',
+                                        }}
+                                    >{passError}</span>
                                 </div>
                             </div>
                             <div className='form-group row mt-4'>

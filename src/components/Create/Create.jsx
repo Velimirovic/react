@@ -1,6 +1,5 @@
 import React from "react";
 import "./Create.css";
-import "./Create.js";
 
 const Create = () => {
     return (
@@ -117,7 +116,7 @@ const Create = () => {
                     </form>
                 </div>
             </div>
-            <script src='./Create.js' type='text/javascript'></script>
+            {/* <script src='./Create.js' type='text/javascript'></script> */}
         </main>
     );
 };
