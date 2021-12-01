@@ -65,88 +65,88 @@ const App = () => {
     return (
         <div className='App'>
             <div>
-            <div className='container-fluid'>
-                <nav className='navbar navbar-expand-lg navbar-dark bg-dark  nav-padding h-auto'>
-                    <div className='container-fluid'>
-                        <BrowserRouter>
-                            <Link className='navbar-brand logo' to=''>
-                                <article className='logo_down'>
-                                    <img src={Logo} alt='' />
-                                </article>
-                            </Link>
-                            <button
-                                className='navbar-toggler'
-                                type='button'
-                                data-bs-toggle='collapse'
-                                data-bs-target='#navbarSupportedContent'
-                                aria-controls='navbarSupportedContent'
-                                aria-expanded='false'
-                                aria-label='Toggle navigation'
-                            >
-                                <span className='navbar-toggler-icon'></span>
-                            </button>
-                        </BrowserRouter>
-                        <div className='collapse navbar-collapse' id='navbarSupportedContent'>
-                            <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
-                                <BrowserRouter>
-                                    <li className='nav-item'>
-                                        <Link
-                                            className='nav-link active hoverclass'
-                                            onClick={() => {
-                                                window.location.href = "/";
-                                            }}
-                                            to='/'
-                                        >
-                                            Home
-                                        </Link>
-                                    </li>
-                                    <li className='nav-item'>
-                                        <Link
-                                            className='nav-link active hoverclass'
-                                            onClick={() => {
-                                                window.location.href = "/Order";
-                                            }}
-                                            to='/Order'
-                                        >
-                                            Order
-                                        </Link>
-                                    </li>
-                                    <li className='nav-item'>
-                                        <Link
-                                            className='nav-link active hoverclass'
-                                            onClick={() => {
-                                                window.location.href = "/Create";
-                                            }}
-                                            to='/Create'
-                                        >
-                                            Create
-                                        </Link>
-                                    </li>
-                                    <li className='nav-item'>
-                                        <Link
-                                            className='nav-link active hoverclass'
-                                            onClick={() => {
-                                                window.location.href = "/Menu";
-                                            }}
-                                            to='/Menu'
-                                        >
-                                            Menu
-                                        </Link>
-                                    </li>
-                                    <li className='nav-item'>
-                                        <Link
-                                            className='nav-link active hoverclass'
-                                            onClick={() => {
-                                                window.location.href = "/Contact";
-                                            }}
-                                            to='/Contact'
-                                        >
-                                            Conctact
-                                        </Link>
-                                    </li>
-                                </BrowserRouter>
-                            </ul>
-                        </div>
+                <div className='container-fluid'>
+                    <nav className='navbar navbar-expand-lg navbar-dark bg-dark  nav-padding h-auto'>
+                        <div className='container-fluid'>
+                            <BrowserRouter>
+                                <Link className='navbar-brand logo' to=''>
+                                    <article className='logo_down'>
+                                        <img src={Logo} alt='' />
+                                    </article>
+                                </Link>
+                                <button
+                                    className='navbar-toggler'
+                                    type='button'
+                                    data-bs-toggle='collapse'
+                                    data-bs-target='#navbarSupportedContent'
+                                    aria-controls='navbarSupportedContent'
+                                    aria-expanded='false'
+                                    aria-label='Toggle navigation'
+                                >
+                                    <span className='navbar-toggler-icon'></span>
+                                </button>
+                            </BrowserRouter>
+                            <div className='collapse navbar-collapse' id='navbarSupportedContent'>
+                                <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
+                                    <BrowserRouter>
+                                        <li className='nav-item'>
+                                            <Link
+                                                className='nav-link active hoverclass'
+                                                onClick={() => {
+                                                    window.location.href = "/";
+                                                }}
+                                                to='/'
+                                            >
+                                                Home
+                                            </Link>
+                                        </li>
+                                        <li className='nav-item'>
+                                            <Link
+                                                className='nav-link active hoverclass'
+                                                onClick={() => {
+                                                    window.location.href = "/Order";
+                                                }}
+                                                to='/Order'
+                                            >
+                                                Order
+                                            </Link>
+                                        </li>
+                                        <li className='nav-item'>
+                                            <Link
+                                                className='nav-link active hoverclass'
+                                                onClick={() => {
+                                                    window.location.href = "/Create";
+                                                }}
+                                                to='/Create'
+                                            >
+                                                Create
+                                            </Link>
+                                        </li>
+                                        <li className='nav-item'>
+                                            <Link
+                                                className='nav-link active hoverclass'
+                                                onClick={() => {
+                                                    window.location.href = "/Menu";
+                                                }}
+                                                to='/Menu'
+                                            >
+                                                Menu
+                                            </Link>
+                                        </li>
+                                        <li className='nav-item'>
+                                            <Link
+                                                className='nav-link active hoverclass'
+                                                onClick={() => {
+                                                    window.location.href = "/Contact";
+                                                }}
+                                                to='/Contact'
+                                            >
+                                                Contact
+                                            </Link>
+                                        </li>
+                                    </BrowserRouter>
+                                </ul>
+                            </div>
 
                             <form className='d-flex'>
                                 <BrowserRouter>
@@ -161,89 +161,88 @@ const App = () => {
                                     </Link>
                                 </BrowserRouter>
                             </form>
-                    </div>
-                </nav>
-            </div>
-            <BrowserRouter>
-                <Routes>
-                    <Route path='/' element={<Home />} />
-                    <Route path='/Order' element={<Order />} />
-                    <Route path='/Create' element={<Create />} />
-                    <Route path='/Menu' element={<Menu />} />
-                    <Route path='/Contact' element={<Contact />} />
-                    <Route path='/Login' element={<Login />} />
-                    <Route path='/Register' element={<Register />} />
-                </Routes>
-            </BrowserRouter>
-            <footer>
-            <div className='container-fluid '>
-                <div className='footer-top d-flex'>
-                    <div className='col-md-2 col-lg-4 text-center footer-top-content'>
-                        <ul className='list-group footer-list'>
-                            <BrowserRouter>
-                                <li className='list-group'>
-                                    <Link
-                                        className='nav-link active'
-                                        onClick={() => {
-                                            window.location.href = "/";
-                                        }}
-                                        to='/'
-                                    >
-                                        Home
-                                    </Link>
-                                </li>
-                                <li className='list-group'>
-                                    <Link
-                                        className='nav-link active'
-                                        onClick={() => {
-                                            window.location.href = "/Order";
-                                        }}
-                                        to='/Order'
-                                    >
-                                        Order
-                                    </Link>
-                                </li>
-                                <li className='list-group'>
-                                    <Link
-                                        className='nav-link active'
-                                        onClick={() => {
-                                            window.location.href = "/Create";
-                                        }}
-                                        to='/Create'
-                                    >
-                                        Create
-                                    </Link>
-                                </li>
-                                <li className='list-group'>
-                                    <Link
-                                        className='nav-link active'
-                                        onClick={() => {
-                                            window.location.href = "/Menu";
-                                        }}
-                                        to='/Menu'
-                                    >
-                                        Menu
-                                    </Link>
-                                </li>
-                                <li className='list-group'>
-                                    <Link
-                                        className='nav-link active'
-                                        onClick={() => {
-                                            window.location.href = "/Contact";
-                                        }}
-                                        to='/Contact'
-                                    >
-                                        Contact
-                                    </Link>
-                                </li>
-                            </BrowserRouter>
-                        </ul>
-                         </div>      
-                    
+                        </div>
+                    </nav>
                 </div>
+                <BrowserRouter>
+                    <Routes>
+                        <Route path='/' element={<Home />} />
+                        <Route path='/Order' element={<Order />} />
+                        <Route path='/Create' element={<Create />} />
+                        <Route path='/Menu' element={<Menu />} />
+                        <Route path='/Contact' element={<Contact />} />
+                        <Route path='/Login' element={<Login />} />
+                        <Route path='/Register' element={<Register />} />
+                    </Routes>
+                </BrowserRouter>
+                <footer>
+                    <div className='container-fluid '>
+                        <div className='footer-top d-flex'>
+                            <div className='col-md-2 col-lg-4 text-center footer-top-content'>
+                                <ul className='list-group footer-list'>
+                                    <BrowserRouter>
+                                        <li className='list-group'>
+                                            <Link
+                                                className='nav-link active'
+                                                onClick={() => {
+                                                    window.location.href = "/";
+                                                }}
+                                                to='/'
+                                            >
+                                                Home
+                                            </Link>
+                                        </li>
+                                        <li className='list-group'>
+                                            <Link
+                                                className='nav-link active'
+                                                onClick={() => {
+                                                    window.location.href = "/Order";
+                                                }}
+                                                to='/Order'
+                                            >
+                                                Order
+                                            </Link>
+                                        </li>
+                                        <li className='list-group'>
+                                            <Link
+                                                className='nav-link active'
+                                                onClick={() => {
+                                                    window.location.href = "/Create";
+                                                }}
+                                                to='/Create'
+                                            >
+                                                Create
+                                            </Link>
+                                        </li>
+                                        <li className='list-group'>
+                                            <Link
+                                                className='nav-link active'
+                                                onClick={() => {
+                                                    window.location.href = "/Menu";
+                                                }}
+                                                to='/Menu'
+                                            >
+                                                Menu
+                                            </Link>
+                                        </li>
+                                        <li className='list-group'>
+                                            <Link
+                                                className='nav-link active'
+                                                onClick={() => {
+                                                    window.location.href = "/Contact";
+                                                }}
+                                                to='/Contact'
+                                            >
+                                                Contact
+                                            </Link>
+                                        </li>
+                                    </BrowserRouter>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
             </div>
-            </footer>
-        </div>
         </div>
     );
 };
