@@ -11,35 +11,33 @@ const Order = () => {
                     </div>
                 </div>
                 <div className='container-fluid order-div animate__animated animate__slideInLeft' style={{ animationDuration: "2s" }}>
-                    <div className='row'>
+                    {/* <div className='row'>  */}
                         <form action='post' target='#'>
                             <div className='col-12 px-5 py-2 text-center'>
-                                <label for=''>Adresa</label>
+                                <label>Adresa</label>
                             </div>
                             <div className='col-12 px-5 py-2'>
                                 <input type='text' className='form-control' placeholder='Adresa' />
                             </div>
                             <div className='col-12 px-5 py-2 text-center'>
-                                <label for=''>Kontakt</label>
+                                <label>Kontakt</label>
                             </div>
                             <div className='col-12 px-5 py-2'>
                                 <input type='text' className='form-control' placeholder='Kontakt' />
                             </div>
                             <div className='col-12 px-5 py-2 text-center'>
-                                <label for=''>Broj palačinaka</label>
+                                <label>Broj palačinaka</label>
                             </div>
                             <div className='col-12 px-5 py-2'>
                                 <select className='form-select' aria-label='Default select example'>
-                                    <option selected>Izaberi</option>
                                     <option value='1'>1</option>
                                     <option value='2'>2</option>
                                     <option value='3'>3</option>
-                                    <option value='2'>4</option>
-                                    <option value='3'>5</option>
+                                    <option value='4'>4</option>
                                 </select>
                             </div>
                         </form>
-                    </div>
+                    {/* </div> */}
                 </div>
             </div>
         </main>

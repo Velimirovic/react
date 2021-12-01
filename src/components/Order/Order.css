@@ -99,6 +99,7 @@ footer {
     height: 100%;
     margin-top: 50px !important;
     padding: 40px;
+    text-align: center;
     margin: auto;
     border-radius: 10px;
     box-shadow: 1px 1px 8px #dda15e;
@@ -111,7 +112,7 @@ footer {
 
 .titles {
     border-bottom: 2px solid #5b2a0b90;
-    margin-top: 96px;
+    margin-top: 158px !important;
 }
 
 #center-location {
@@ -189,9 +190,7 @@ footer {
     background-color: #00000090;
 }
 
-.footer-list li {
-    padding: 15px;
-}
+
 
 .footer-list a {
     text-decoration: none;
@@ -269,8 +268,6 @@ footer {
 
     .footer-list {
         flex-direction: row !important;
-        margin-top: -10px;
-        margin-left: 12%;
     }
 
     .icons img {
@@ -284,7 +281,7 @@ footer {
     }
 
     .titles {
-        margin-top: 16%;
+        margin-top: 158px;
     }
 }
 
@@ -295,7 +292,7 @@ footer {
 
     .footer-list {
         flex-direction: row !important;
-        margin-top: -10px;
+        font-size: small;
     }
 
     .icons img {

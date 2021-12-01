@@ -63,8 +63,9 @@ const App = () => {
 
     return (
         <div className='App'>
+            <div>
             <div className='container-fluid'>
-                <nav className='navbar navbar-expand-lg navbar-dark bg-dark fixed-top nav-padding h-auto'>
+                <nav className='navbar navbar-expand-lg navbar-dark bg-dark  nav-padding h-auto'>
                     <div className='container-fluid'>
                         <BrowserRouter>
                             <Link className='navbar-brand logo' to=''>
@@ -73,7 +74,7 @@ const App = () => {
                                 </article>
                             </Link>
                             <button
-                                class='navbar-toggler'
+                                className='navbar-toggler'
                                 type='button'
                                 data-bs-toggle='collapse'
                                 data-bs-target='#navbarSupportedContent'
@@ -81,7 +82,7 @@ const App = () => {
                                 aria-expanded='false'
                                 aria-label='Toggle navigation'
                             >
-                                <span class='navbar-toggler-icon'></span>
+                                <span className='navbar-toggler-icon'></span>
                             </button>
                         </BrowserRouter>
                         <div className='collapse navbar-collapse' id='navbarSupportedContent'>
@@ -145,7 +146,7 @@ const App = () => {
                                 </BrowserRouter>
                             </ul>
                         </div>
-                        <form className='d-flex'>
+
                             <form className='d-flex'>
                                 <BrowserRouter>
                                     <Link
@@ -159,7 +160,6 @@ const App = () => {
                                     </Link>
                                 </BrowserRouter>
                             </form>
-                        </form>
                     </div>
                 </nav>
             </div>
@@ -174,10 +174,11 @@ const App = () => {
                     <Route path='/Register' element={<Register />} />
                 </Routes>
             </BrowserRouter>
-            <div className='container-fluid'>
-                <div class='footer-top d-flex'>
-                    <div class='col-md-4 col-lg-4 pt-4 text-center footer-top-content leftajfloat'>
-                        <ul className='list-group footer-list float-right'>
+            <footer>
+            <div className='container-fluid '>
+                <div className='footer-top d-flex'>
+                    <div className='col-md-2 col-lg-4 text-center footer-top-content'>
+                        <ul className='list-group footer-list'>
                             <BrowserRouter>
                                 <li className='list-group'>
                                     <Link
@@ -236,26 +237,12 @@ const App = () => {
                                 </li>
                             </BrowserRouter>
                         </ul>
-                        {/* <div class='col-md-12 col-lg-4 pt-4 col-sm-11 text-center footer-top-content icons'>
-                            <BrowserRouter>
-                                <Link to='instagram.com'>
-                                    <img src={insta} alt='' />
-                                </Link>
-                                <Link to={fejs}>
-                                    <img src='images/facebook.png' alt='' />
-                                </Link>
-                            </BrowserRouter>
-                        </div> */}
-                        <div class='col-md-12 col-lg-4 pt-4 text-center footer-top-content'>
-                            <ul class='list-group float-left'>
-                                <article class='logo_down'>
-                                    <img src={slidza} alt='' />
-                                </article>
-                            </ul>
-                        </div>
-                    </div>
+                         </div>      
+                    
                 </div>
             </div>
+            </footer>
+        </div>
         </div>
     );
 };
