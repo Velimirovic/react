@@ -1,10 +1,6 @@
 import React from "react";
-import { useState } from "react";
-import { BrowserRouter } from "react-router-dom";
-import { useForm } from "react-hook-form";
-
-
-
+import { BrowserRouter, Link } from "react-router-dom";
+import "./Login.css";
 
 const Login = () => {
 
@@ -61,9 +57,7 @@ const Login = () => {
                                 </div>
                             </div>
                             <div className='register-link text-center mt-3'>
-                                {/* <BrowserRouter>
-                                    <Link to='/Register'> Create account </Link>
-                                </BrowserRouter> */}
+                                <Link to='/Register'> Create account </Link>
                             </div>
                         </form>
 

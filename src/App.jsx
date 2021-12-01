@@ -12,6 +12,7 @@ import userpic from "./components/images/user.png";
 import "./css/bootstrap.min.css";
 import "./App.css";
 import slidza from "./components/images/One4All_Logo.png";
+import Register from "./components/Register/Register";
 
 const App = () => {
     // const [pancakes, setPancakes] = useState([]);
@@ -170,6 +171,7 @@ const App = () => {
                     <Route path='/Menu' element={<Menu />} />
                     <Route path='/Contact' element={<Contact />} />
                     <Route path='/Login' element={<Login />} />
+                    <Route path='/Register' element={<Register />} />
                 </Routes>
             </BrowserRouter>
             <div className='container-fluid'>
