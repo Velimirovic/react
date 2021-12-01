@@ -4,18 +4,9 @@ import "./Login.css";
 
 const Login = () => {
 
-    /*const[email,setEmail] = useState("");
-    const[password,setPassword] = useState("");
-    const addNewLogin = () => {
 
-        setEmail("");
-        setPassword("");
-        onLoginAdded({
-        email:email,
-        password:password,
-        });
 
-    };*/
+
 
 
     return (
@@ -25,7 +16,7 @@ const Login = () => {
                     <div className='d-flex justify-content-center'>
                         <div className='titles'>
                             <h2 className='text-color text-center text-uppercase mt-4 animate__animated animate__fadeInDown' style={{ animationDuration: "2s" }}>
-                                Logina
+                                Login
                             </h2>
                         </div>
                     </div>
