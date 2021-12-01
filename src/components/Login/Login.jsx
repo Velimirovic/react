@@ -32,13 +32,14 @@ const Login = () => {
                     <div className='order-div animate__animated animate__fadeInLeft' style={{ animationDuration: "2s" }}>
                         
                         
-                        <form>
+                        <form id='forma_login'>
                             <div className='form-group row mt-3'>
                                 <label for='inputEmail3' className='col-sm-4 col-md-4 col-lg-2 col-form-label sd'>
                                     Email
                                 </label>
                                 <div className='col-sm-10'>
-                                    <input  className='form-control'/>
+                                    <input  className='form-control' id='inputEmail'/>
+                                    <small id="small-za-gresku-email"></small>
                                 </div>
                             </div>
                             <div className='form-group row mt-3'>
@@ -46,12 +47,13 @@ const Login = () => {
                                     Password
                                 </label>
                                 <div className='col-sm-10'>
-                                    <input className='form-control' placeholder='Password' type="password"/>
+                                    <input className='form-control' placeholder='Password' type="password" id='inputPassword'/>
+                                    <small id="small-za-gresku-password"></small>
                                 </div>
                             </div>
                             <div className='form-group row mt-4'>
                                 <div className='col-sm-10'>
-                                    <button type='submit' className='btn btn-dark'>
+                                    <button type='submit' className='btn btn-dark' id='submit'>
                                         Sign in
                                     </button>
                                 </div>
@@ -67,6 +69,7 @@ const Login = () => {
                     </div>
                 </div>
             </main>
+            <script src="Validation.js"></script>
         </div>
     );
 };
