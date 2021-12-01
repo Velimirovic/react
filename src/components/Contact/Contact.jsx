@@ -14,7 +14,7 @@ const Contact = () => {
                 </div>
                 <div className='container-fluid order-div animate__animated animate__fadeInLeft' style={{ animationDuration: "2s" }}>
                     <div className='row'>
-                        <div className='col-lg-6 padding-col'>
+                        <div className='col-lg-6 padding-col px-5'>
                             <h3 id='center-location'>Location</h3>
                             <iframe
                                 id='location-map'
@@ -47,7 +47,7 @@ const Contact = () => {
                                             <span className='spanovi'>
                                                 <i className='bi bi-geo-alt-fill icon-size'></i> Location :
                                             </span>{" "}
-                                            FutoškNavLink 17, Novi Sad
+                                            Futoška 17, Novi Sad
                                         </p>
                                     </div>
                                     <div className='col-12 padding-info'>

@@ -38,11 +38,11 @@ const Login = () => {
                                     Email
                                 </label>
                                 <div className='col-sm-10'>
-                                    <input  className='form-control'/>
+                                    <input  className='form-control' placeholder='Email'/>
                                 </div>
                             </div>
                             <div className='form-group row mt-3'>
-                                <label for='inputPassword3' className='col-sm-4 col-md-4 col-lg-2 col-form-label'>
+                                <label for='inputPassword3'  className='col-sm-4 col-md-4 col-lg-2 col-form-label'>
                                     Password
                                 </label>
                                 <div className='col-sm-10'>

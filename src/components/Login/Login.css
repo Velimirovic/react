@@ -94,6 +94,15 @@ footer {
     margin: auto;
     border-radius: 10px;
     box-shadow: 1px 1px 8px #dda15e;
+    margin-bottom: 198px !important;
+}
+
+.btn-dark {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+    float: left;
+    margin-left: 25px;
 }
 
 .first {
