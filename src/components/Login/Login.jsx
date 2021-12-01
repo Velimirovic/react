@@ -25,7 +25,7 @@ const Login = () => {
                     <div className='d-flex justify-content-center'>
                         <div className='titles'>
                             <h2 className='text-color text-center text-uppercase mt-4 animate__animated animate__fadeInDown' style={{ animationDuration: "2s" }}>
-                                Login
+                                Logina
                             </h2>
                         </div>
                     </div>
@@ -38,11 +38,11 @@ const Login = () => {
                                     Email
                                 </label>
                                 <div className='col-sm-10'>
-                                    <input  className='form-control' placeholder='Email'/>
+                                    <input  className='form-control'/>
                                 </div>
                             </div>
                             <div className='form-group row mt-3'>
-                                <label for='inputPassword3'  className='col-sm-4 col-md-4 col-lg-2 col-form-label'>
+                                <label for='inputPassword3' className='col-sm-4 col-md-4 col-lg-2 col-form-label'>
                                     Password
                                 </label>
                                 <div className='col-sm-10'>

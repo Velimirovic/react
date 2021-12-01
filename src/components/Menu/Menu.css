@@ -344,7 +344,7 @@ footer {
 .order-div {
     background-color: #5b2a0b90;
     width: 50%;
-    height: 50% !important;
+    height: 22%;
     padding: 20px;
     margin: auto;
     border-radius: 10px;
@@ -352,8 +352,8 @@ footer {
 }
 
 .form-check {
-    display: inline-block !important;
-    margin-left: 10px !important;
+    display: inline-block;
+    margin-left: 10px;
 }
 
 @media (max-width: 1600px) {
