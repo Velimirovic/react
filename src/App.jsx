@@ -1,3 +1,4 @@
+import Footer from "./components/Footer/Footer";
 import Nav from "./components/Nav/Nav";
 import { useEffect, useState } from "react";
 import { BrowserRouter, Link , Route, Routes} from "react-router-dom";
@@ -70,6 +71,12 @@ return (
 );
 
 
+    // return (
+    //     <div className='App'>
+    //         <Nav />
+    //         <Footer />
+    //     </div>
+    // );
 };
 
 export default App;
