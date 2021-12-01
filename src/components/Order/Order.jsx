@@ -1,6 +1,8 @@
 import React from "react";
+import Select from "../components2/Select";
 import "./css/bootstrap.css";
 import "./Order.css";
+
 const Order = () => {
     return (
         <main>
@@ -12,31 +14,37 @@ const Order = () => {
                 </div>
                 <div className='container-fluid order-div animate__animated animate__slideInLeft' style={{ animationDuration: "2s" }}>
                     {/* <div className='row'>  */}
-                        <form action='post' target='#'>
-                            <div className='col-12 px-5 py-2 text-center'>
-                                <label>Adresa</label>
-                            </div>
-                            <div className='col-12 px-5 py-2'>
-                                <input type='text' className='form-control' placeholder='Adresa' />
-                            </div>
-                            <div className='col-12 px-5 py-2 text-center'>
-                                <label>Kontakt</label>
-                            </div>
-                            <div className='col-12 px-5 py-2'>
-                                <input type='text' className='form-control' placeholder='Kontakt' />
-                            </div>
-                            <div className='col-12 px-5 py-2 text-center'>
-                                <label>Broj palačinaka</label>
-                            </div>
-                            <div className='col-12 px-5 py-2'>
-                                <select className='form-select form-control' aria-label='Default select example'>
-                                    <option value='1'>1</option>
-                                    <option value='2'>2</option>
-                                    <option value='3'>3</option>
-                                    <option value='4'>4</option>
-                                </select>
-                            </div>
-                        </form>
+                    <form action='post' target='#'>
+                        <div className='col-12 px-5 py-2 text-center'>
+                            <label>Address</label>
+                        </div>
+                        <div className='col-12 px-5 py-2'>
+                            <input type='text' className='form-control' placeholder='Adresa' />
+                        </div>
+                        <div className='col-12 px-5 py-2 text-center'>
+                            <label>Contact</label>
+                        </div>
+                        <div className='col-12 px-5 py-2'>
+                            <input type='text' className='form-control' placeholder='Kontakt' />
+                        </div>
+                        <div className='col-12 px-5 py-2 text-center'>
+                            <label>Pancakes</label>
+                        </div>
+                        <div className='col-12 px-5 py-2'>
+                            <select className='w-100 m-3 form-control '>
+                                <option> Should've been list of pancakes</option>
+                            </select>
+                            <select className='w-100 m-3 form-control '>
+                                <option> Should've been list of pancakes</option>
+                            </select>
+                            <select className='w-100 m-3 form-control '>
+                                <option> Should've been list of pancakes</option>
+                            </select>
+                            <select className='w-100 m-3 form-control '>
+                                <option> Should've been list of pancakes</option>
+                            </select>
+                        </div>
+                    </form>
                     {/* </div> */}
                 </div>
             </div>
