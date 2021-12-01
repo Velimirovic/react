@@ -6,7 +6,7 @@ import PancakeList from "../components2/PancakeList.jsx";
 
 const Menu = () => {
     const [pancakes, setPancakes] = useState([]);
-    const BACKEND_URL = "https://one4all-hrana.herokuapp.com/order/";
+    const BACKEND_URL = "https://one4all-hrana.herokuapp.com/pancakes/";
     const readPancakes = () => {
         fetch(BACKEND_URL)
             .then((response) => {
