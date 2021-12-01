@@ -6,7 +6,7 @@ import PancakeList from "../components2/PancakeList.jsx";
 
 const Menu = () => {
     const [pancakes, setPancakes] = useState([]);
-    const BACKEND_URL = "https://localhost:8080/pancakes/";
+    const BACKEND_URL = "https://https://makepancake.herokuapp.com/pancakes/";
     const readPancakes = () => {
         fetch(BACKEND_URL)
             .then((response) => {
@@ -27,7 +27,7 @@ const Menu = () => {
                 <div className='d-flex justify-content-center'>
                     <div className='titles'>
                         <h2 className='text-color text-center text-uppercase mt-5 font animate__animated animate__fadeInDown' style={{ animationDuration: "2s" }}>
-                            Menua
+                            Menu
                         </h2>
                     </div>
                 </div>

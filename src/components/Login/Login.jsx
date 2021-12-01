@@ -31,9 +31,7 @@ const Login = () => {
                         </div>
                     </div>
                     <div className='order-div animate__animated animate__fadeInLeft' style={{ animationDuration: "2s" }}>
-                        
-                        
-                        <form id='forma_login'>
+                        <form>
                             <div className='form-group row mt-3'>
                                 <label for='inputEmail3' className='col-sm-4 col-md-4 col-lg-2 col-form-label sd'>
                                     Email
@@ -55,8 +53,7 @@ const Login = () => {
                                     Password
                                 </label>
                                 <div className='col-sm-10'>
-                                    <input className='form-control' placeholder='Password' type="password" id='inputPassword'/>
-                                    <small id="small-za-gresku-password"></small>
+                                    <input className='form-control' placeholder='Password' type='password' />
                                 </div>
                             </div>
                             <div className='form-group row mt-4'>
@@ -70,14 +67,10 @@ const Login = () => {
                                 <Link to='/Register'> Create account </Link>
                             </div>
                         </form>
-
-
-
-
                     </div>
                 </div>
             </main>
-            <script src="Validation.js"></script>
+            <script src='Validation.js'></script>
         </div>
     );
 };
