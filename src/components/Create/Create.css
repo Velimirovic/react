@@ -184,3 +184,10 @@ h2 {
         height: 50%;
     }
 }
+
+#first {
+    display: none;
+}
+#second {
+    display: block;
+}
