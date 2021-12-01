@@ -1,21 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter, Link } from "react-router-dom";
 import "./Login.css";
-import validator from 'validator';
 
 const Login = () => {
 
-    const [emailError, setEmailError] = useState('');
-    const validateEmail = (e) => {
-        e.persist();
-        var email = e.traget.value;
+    /*const[email,setEmail] = useState("");
+    const[password,setPassword] = useState("");
+    const addNewLogin = () => {
 
-        if(validator.isEmail(email)) {
-            setEmailError('Valid Email')
-        } else {
-            setEmailError('Invalid Email!!')
-        }
-    }
+        setEmail("");
+        setPassword("");
+        onLoginAdded({
+        email:email,
+        password:password,
+        });
+
+    };*/
 
 
     return (
@@ -25,7 +25,7 @@ const Login = () => {
                     <div className='d-flex justify-content-center'>
                         <div className='titles'>
                             <h2 className='text-color text-center text-uppercase mt-4 animate__animated animate__fadeInDown' style={{ animationDuration: "2s" }}>
-                                Login
+                                Logina
                             </h2>
                         </div>
                     </div>
@@ -34,16 +34,15 @@ const Login = () => {
                         
                         <form>
                             <div className='form-group row mt-3'>
-                                <label for='inputEmail3' className='col-sm-4 col-md-4 col-lg-2 col-form-label sd' >
+                                <label for='inputEmail3' className='col-sm-4 col-md-4 col-lg-2 col-form-label sd'>
                                     Email
                                 </label>
                                 <div className='col-sm-10'>
-                                    <input  className='form-control' placeholder='Email'  onChange={(e) => validateEmail(e)}/>
-                                    <span style={{fontWeight:'bold',color:'red',}}>{emailError}</span>
+                                    <input  className='form-control'/>
                                 </div>
                             </div>
                             <div className='form-group row mt-3'>
-                                <label for='inputPassword3'  className='col-sm-4 col-md-4 col-lg-2 col-form-label'>
+                                <label for='inputPassword3' className='col-sm-4 col-md-4 col-lg-2 col-form-label'>
                                     Password
                                 </label>
                                 <div className='col-sm-10'>
@@ -52,7 +51,7 @@ const Login = () => {
                             </div>
                             <div className='form-group row mt-4'>
                                 <div className='col-sm-10'>
-                                    <button type='submit' className='btn btn-dark' >
+                                    <button type='submit' className='btn btn-dark'>
                                         Sign in
                                     </button>
                                 </div>

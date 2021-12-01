@@ -3,7 +3,6 @@ import "./Menu.css";
 import slik from "../images/slika3.jpg";
 import { useState } from "react";
 import PancakeList from "../components2/PancakeList.jsx";
-import "../components2/Pancake.css";
 
 const Menu = () => {
     const [pancakes, setPancakes] = useState([]);
@@ -28,7 +27,7 @@ const Menu = () => {
                 <div className='d-flex justify-content-center'>
                     <div className='titles'>
                         <h2 className='text-color text-center text-uppercase mt-5 font animate__animated animate__fadeInDown' style={{ animationDuration: "2s" }}>
-                            Menu
+                            Menua
                         </h2>
                     </div>
                 </div>
@@ -39,7 +38,7 @@ const Menu = () => {
                         <div className='order-div animate__animated animate__fadeInLeft' style={{ animationDuration: "2s" }}>
                             <form>
                                 <div className='form-group row mt-3'>
-                                    <label htmlFor='inputName' className='col-sm-3 col-form-label'>
+                                    <label for='inputName' className='col-sm-3 col-form-label'>
                                         Name pancake
                                     </label>
                                     <div className='col-sm-8'>
@@ -52,13 +51,13 @@ const Menu = () => {
                                     <div className='col-sm-8'>
                                         <div className='form-check'>
                                             <input className='form-check-input' type='checkbox' id='gridCheck1' />
-                                            <label className='form-check-label' htmlFor='gridCheck1'>
+                                            <label className='form-check-label' for='gridCheck1'>
                                                 Sweet
                                             </label>
                                         </div>
                                         <div className='form-check'>
                                             <input className='form-check-input' type='checkbox' id='gridCheck1' />
-                                            <label className='form-check-label' htmlFor='gridCheck1'>
+                                            <label className='form-check-label' for='gridCheck1'>
                                                 Salty
                                             </label>
                                         </div>
@@ -73,6 +72,7 @@ const Menu = () => {
                                 </div>
                             </form>
                         </div>
+
                         <div className='row mt-5'>
                             <div className='col-lg-4 col-sm-4 col-md-4 col-4 px-5 small-padding-cards animate__animated animate__fadeInLeft' style={{ animationDuration: "2s" }}>
                                 <PancakeList pancakeList={pancakes} />

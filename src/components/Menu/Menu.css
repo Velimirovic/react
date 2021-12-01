@@ -88,6 +88,110 @@ footer {
     background-color: #5b2a0b90;
 }
 
+@media (max-width: 960px) {
+    .rowa {
+        display: block;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
+
+    .footer-list {
+        flex-direction: row !important;
+        margin-top: -10px;
+        margin-left: 70%;
+    }
+
+    .icons img {
+        margin-top: -10px;
+        padding: 10px;
+    }
+
+    .logo_down img {
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@media (max-width: 930px) {
+    .rowa {
+        display: block;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
+
+    .footer-list {
+        flex-direction: row !important;
+        margin-top: -10px;
+        margin-left: 70%;
+    }
+
+    .icons img {
+        margin-top: -10px;
+        padding: 10px;
+    }
+
+    .logo_down img {
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@media (max-width: 900px) {
+    .rowa {
+        display: block;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
+
+    .footer-list {
+        flex-direction: row !important;
+        margin-top: -10px;
+        margin-left: 12%;
+    }
+
+    .icons img {
+        margin-top: -10px;
+        padding: 10px;
+    }
+
+    .logo_down img {
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@media (max-width: 650px) {
+    footer {
+        margin-top: 50px;
+    }
+
+    .footer-list {
+        flex-direction: row !important;
+        margin-top: -10px;
+        margin-left: 12%;
+    }
+
+    .icons img {
+        margin-top: -10px;
+        padding: 10px;
+    }
+
+    .logo_down img {
+        width: 50%;
+        height: 50%;
+    }
+}
+
+body {
+    background-color: #ffffe6;
+}
+
 .container-fluid,
 .row {
     padding-left: 0px !important;
@@ -99,6 +203,16 @@ footer {
     margin-right: 5px;
 }
 
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .show > .nav-link {
+    color: white;
+}
+
+.nav-padding {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+}
 
 .row {
     --bs-gutter-x: 0rem !important;
@@ -130,10 +244,6 @@ footer {
 .titles {
     border-bottom: 2px solid #5b2a0b90;
     margin-top: 3%;
-}
-
-.small-padding-cards {
-    max-height: 350px;
 }
 
 #custom-font {
@@ -234,7 +344,7 @@ footer {
 .order-div {
     background-color: #5b2a0b90;
     width: 50%;
-    height: 50% !important;
+    height: 22%;
     padding: 20px;
     margin: auto;
     border-radius: 10px;
@@ -242,8 +352,8 @@ footer {
 }
 
 .form-check {
-    display: inline-block !important;
-    margin-left: 10px !important;
+    display: inline-block;
+    margin-left: 10px;
 }
 
 @media (max-width: 1600px) {
@@ -465,105 +575,5 @@ footer {
 
     .small-padding {
         margin-bottom: 20px;
-    }
-}
-
-@media (max-width: 960px) {
-    .rowa {
-        display: block;
-    }
-
-    footer {
-        margin-top: 50px;
-    }
-
-    .footer-list {
-        flex-direction: row !important;
-        margin-top: -10px;
-        margin-left: 70%;
-    }
-
-    .icons img {
-        margin-top: -10px;
-        padding: 10px;
-    }
-
-    .logo_down img {
-        width: 50%;
-        height: 50%;
-    }
-}
-
-@media (max-width: 930px) {
-    .rowa {
-        display: block;
-    }
-
-    footer {
-        margin-top: 50px;
-    }
-
-    .footer-list {
-        flex-direction: row !important;
-        margin-top: -10px;
-        margin-left: 70%;
-    }
-
-    .icons img {
-        margin-top: -10px;
-        padding: 10px;
-    }
-
-    .logo_down img {
-        width: 50%;
-        height: 50%;
-    }
-}
-
-@media (max-width: 900px) {
-    .rowa {
-        display: block;
-    }
-
-    footer {
-        margin-top: 50px;
-    }
-
-    .footer-list {
-        flex-direction: row !important;
-        margin-top: -10px;
-        margin-left: 12%;
-    }
-
-    .icons img {
-        margin-top: -10px;
-        padding: 10px;
-    }
-
-    .logo_down img {
-        width: 50%;
-        height: 50%;
-    }
-}
-
-@media (max-width: 650px) {
-    footer {
-        margin-top: 50px;
-    }
-
-    .footer-list {
-        flex-direction: row !important;
-        margin-top: -10px;
-        margin-left: 12%;
-    }
-
-    .icons img {
-        margin-top: -10px;
-        padding: 10px;
-    }
-
-    .logo_down img {
-        width: 50%;
-        height: 50%;
     }
 }
