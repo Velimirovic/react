@@ -13,6 +13,7 @@ import "./css/bootstrap.min.css";
 import "./App.css";
 import slidza from "./components/images/One4All_Logo.png";
 import Register from "./components/Register/Register";
+import { useState } from "react";
 
 const App = () => {
     // const [pancakes, setPancakes] = useState([]);

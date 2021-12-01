@@ -1,8 +1,22 @@
 import React from "react";
 import "./Menu.css";
 import slik from "../images/slika3.jpg";
+import { useState } from "react";
+import PancakeList from "../components2/PancakeList.jsx";
 
 const Menu = () => {
+    const [pancakes, setPancakes] = useState([]);
+    const BACKEND_URL = "https://one4all-hrana.herokuapp.com/order/";
+    const readPancakes = () => {
+        fetch(BACKEND_URL)
+            .then((response) => {
+                return response.json();
+            })
+            .then((data) => setPancakes(data));
+    };
+
+    readPancakes();
+
     return (
         <main>
             <div className='container-fluid big-picture'>
@@ -61,32 +75,7 @@ const Menu = () => {
 
                         <div className='row mt-5'>
                             <div className='col-lg-4 col-sm-4 col-md-4 col-4 px-5 small-padding-cards animate__animated animate__fadeInLeft' style={{ animationDuration: "2s" }}>
-                                <div className='card' id='MainCard'>
-                                    <div className='card-body' id='custom-font'>
-                                        <h3 className='card-title' id='PancakeName'>
-                                            {" "}
-                                            Classic Pancake{" "}
-                                        </h3>
-                                        <h5 className='card-text' id='PancakeKind'>
-                                            {" "}
-                                            Sweet
-                                        </h5>
-                                        <br />
-                                        <h6 id='Ingredients'> Ingredients: </h6>
-                                        <p className='card-text' id='IngredientList'>
-                                            {" "}
-                                            Cookie, Orea, Banana, Strawberry, Chocolate, Something
-                                        </p>
-                                        <h5 className='display-6' id='Price'>
-                                            {" "}
-                                            500rsd{" "}
-                                        </h5>
-                                        <p id='CreatedBy' className='mt-4'>
-                                            {" "}
-                                            <i> Created by User </i>{" "}
-                                        </p>
-                                    </div>
-                                </div>
+                                <PancakeList pancakeList={pancakes} />
                             </div>
                         </div>
                     </div>
