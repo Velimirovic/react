@@ -38,7 +38,7 @@ const Menu = () => {
                         <div className='order-div animate__animated animate__fadeInLeft' style={{ animationDuration: "2s" }}>
                             <form>
                                 <div className='form-group row mt-3'>
-                                    <label for='inputName' className='col-sm-3 col-form-label'>
+                                    <label htmlFor='inputName' className='col-sm-3 col-form-label'>
                                         Name pancake
                                     </label>
                                     <div className='col-sm-8'>
@@ -51,13 +51,13 @@ const Menu = () => {
                                     <div className='col-sm-8'>
                                         <div className='form-check'>
                                             <input className='form-check-input' type='checkbox' id='gridCheck1' />
-                                            <label className='form-check-label' for='gridCheck1'>
+                                            <label className='form-check-label' htmlFor='gridCheck1'>
                                                 Sweet
                                             </label>
                                         </div>
                                         <div className='form-check'>
                                             <input className='form-check-input' type='checkbox' id='gridCheck1' />
-                                            <label className='form-check-label' for='gridCheck1'>
+                                            <label className='form-check-label' htmlFor='gridCheck1'>
                                                 Salty
                                             </label>
                                         </div>
