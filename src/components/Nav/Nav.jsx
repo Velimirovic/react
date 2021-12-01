@@ -38,27 +38,27 @@ const Nav = () => {
                         <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
                             <BrowserRouter>
                                 <li className='nav-item'>
-                                    <Link className='nav-link active' to='/Home'>
+                                    <Link className='nav-link active hoverclass' to='/Home'>
                                         Home
                                     </Link>
                                 </li>
                                 <li className='nav-item'>
-                                    <Link className='nav-link active' to='/Order'>
+                                    <Link className='nav-link active hoverclass' to='/Order'>
                                         Order
                                     </Link>
                                 </li>
                                 <li className='nav-item'>
-                                    <Link className='nav-link active' to='/Create'>
+                                    <Link className='nav-link active hoverclass' to='/Create'>
                                         Create
                                     </Link>
                                 </li>
                                 <li className='nav-item'>
-                                    <Link className='nav-link active' to='/Menu'>
+                                    <Link className='nav-link active hoverclass' to='/Menu'>
                                         Menu
                                     </Link>
                                 </li>
                                 <li className='nav-item'>
-                                    <Link className='nav-link active' to='/Contact'>
+                                    <Link className='nav-link active hoverclass' to='/Contact'>
                                         Conctact
                                     </Link>
                                 </li>
