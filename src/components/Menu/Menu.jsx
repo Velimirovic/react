@@ -1,12 +1,12 @@
 import React from "react";
 import "./Menu.css";
 import slik from "../images/slika3.jpg";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import PancakeList from "../components2/PancakeList.jsx";
 
 const Menu = () => {
     const [pancakes, setPancakes] = useState([]);
-    const BACKEND_URL = "https://https://makepancake.herokuapp.com/pancakes/";
+    const BACKEND_URL = "https://one4all-hrana.herokuapp.com/pancakes/";
     const readPancakes = () => {
         fetch(BACKEND_URL)
             .then((response) => {
@@ -15,7 +15,12 @@ const Menu = () => {
             .then((data) => setPancakes(data));
     };
 
-    readPancakes();
+    useEffect(() => {
+        const getData = () => {
+            readPancakes();
+        };
+        getData();
+    }, []);
 
     return (
         <main>

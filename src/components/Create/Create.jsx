@@ -26,7 +26,7 @@ const Create = () => {
                                 Type of pancake
                             </label>
                             <div className='col-sm-8'>
-                                <select className='custom-select mr-sm-2 form-control' onChange='change()' id='inlineFormCustomSelect'>
+                                <select className='custom-select mr-sm-2 form-control' id='inlineFormCustomSelect'>
                                     <option defaultValue value='1' id='salt'>
                                         Salty
                                     </option>
