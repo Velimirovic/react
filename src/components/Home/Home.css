@@ -415,7 +415,7 @@ footer {
     }
     .small-padding-cards {
         padding: 5px !important;
-        width: 80%;
+        width: 80% !important;
         height: 100%;
         margin: 0px !important;
     }
@@ -445,7 +445,7 @@ footer {
 
     .small-padding-cards {
         padding: 5px !important;
-        width: 100%;
+        width: 100% !important;
         height: 100%;
         margin: 0px !important;
     }

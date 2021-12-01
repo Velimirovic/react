@@ -14,7 +14,7 @@ const Contact = () => {
                 </div>
                 <div className='container-fluid order-div animate__animated animate__fadeInLeft' style={{ animationDuration: "2s" }}>
                     <div className='row'>
-                        <div className='col-lg-6 padding-col'>
+                        <div className='col-lg-6 padding-col px-5'>
                             <h3 id='center-location'>Location</h3>
                             <iframe
                                 id='location-map'

@@ -49,8 +49,13 @@ const Register = () => {
                             </div>
                             <div className='form-group row mt-4'>
                                 <div className='col-sm-10'>
+<<<<<<< HEAD
+                                    <button type='submit' className='btn btn-dark ad'>
+                                        Sign in
+=======
                                     <button type='submit' className='btn btn-dark'>
                                         Sign Up
+>>>>>>> 95397dc9e47fedf8fa77cd1479a83c25c40501de
                                     </button>
                                 </div>
                             </div>

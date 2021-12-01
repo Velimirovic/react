@@ -29,7 +29,7 @@ const Order = () => {
                                 <label>Broj palačinaka</label>
                             </div>
                             <div className='col-12 px-5 py-2'>
-                                <select className='form-select' aria-label='Default select example'>
+                                <select className='form-select form-control' aria-label='Default select example'>
                                     <option value='1'>1</option>
                                     <option value='2'>2</option>
                                     <option value='3'>3</option>

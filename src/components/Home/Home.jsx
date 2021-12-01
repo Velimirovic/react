@@ -12,10 +12,10 @@ const Home = () => {
             <main>
                 <div className='container-fluid main-content'>
                     <div className='row'>
-                        <div className='col-md-0 col-lg-2'></div>
-                        <div class='col-md-12 px-4 mt-5 small-padding'>
+                        <div className='col-md-2 col-lg-2'></div>
+                        <div class='col-md-8 px-4 mt-5 small-padding'>
                             <div className='row mt-4 rows'>
-                                <div className='col-lg-4 col-sm-12 col-md-4 col-4 px-5 small-padding-cards'>
+                                <div className='col-lg-4 col-sm-12 col-md-4 col-12  small-padding-cards'>
                                     <div className='card' id='MainCard'>
                                         <div className='card-body' id='custom-font'>
                                             <h3 className='card-title' id='PancakeName'>
@@ -38,7 +38,7 @@ const Home = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='col-lg-4 col-sm-12 col-md-4 col-4 px-5 small-padding-cards'>
+                                <div className='col-lg-4 col-sm-12 col-md-4 col-12  small-padding-cards'>
                                     <div className='card' id='MainCard'>
                                         <div className='card-body' id='custom-font'>
                                             <h3 className='card-title' id='PancakeName'>
@@ -61,7 +61,7 @@ const Home = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='col-lg-4 col-sm-12 col-md-4 col-4 px-5 small-padding-cards '>
+                                <div className='col-lg-4 col-sm-12 col-md-4 col-12  small-padding-cards '>
                                     <div className='card' id='MainCard'>
                                         <div className='card-body' id='custom-font'>
                                             <h3 className='card-title' id='PancakeName'>
@@ -85,8 +85,11 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
+
+                            
+
                         </div>
-                        <div className='col-md-0 col-lg-2'></div>
+                        <div className='col-md-2 col-lg-2'></div>
                     </div>
                 </div>
             </main>
