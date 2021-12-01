@@ -11,7 +11,7 @@ import TodoContainer from "./compotnents/TodoContainer";
 
 const App = () => {
 
-  const BACKEND_URL = "https://one4all-hrana.herokuapp.com/pancakes/";
+  
 
   const [pancakes,setPancakes] = useState([]);
 
@@ -22,16 +22,6 @@ const App = () => {
   };
 
   useEffect(() => getData(),[]);
-
-//   const onTodoClicked = (todo) => {
-//     let newTodo = {...todo, isDone: !todo.isDone};
-//     let newTodos = todos.map((item)=>
-//     item.id===newTodo.id ? newTodo : item
-//     );
-//     setTodos(newTodos);
-//     const endpoint = newTodo.isDone?"done":"not-done";
-//     fetch(`${BACKEND_URL}/${newTodo.id}/${endpoint}`,{method:"PUT"},);
-//   };
 
 
   const onTodoAdded = (pancake) =>{
@@ -55,28 +45,28 @@ const App = () => {
       });
   };
 
-return (
-<>
-<BrowserRouter>
-  <div>
-    <Header />
-  </div>
-  <Routes>
-    <Route path="/" element={<TodoContainer onTodoAdded={onTodoAdded} todos={todos}/>}/>
-    <Route path="/about" element={<About/>}/>
-  </Routes>
-</BrowserRouter>
-</>
+// return (
+// <>
+// <BrowserRouter>
+//   <div>
+//     <Header />
+//   </div>
+//   <Routes>
+//     <Route path="/" element={<TodoContainer onTodoAdded={onTodoAdded} todos={todos}/>}/>
+//     <Route path="/about" element={<About/>}/>
+//   </Routes>
+// </BrowserRouter>
+// </>
  
-);
+// );
 
 
-    // return (
-    //     <div className='App'>
-    //         <Nav />
-    //         <Footer />
-    //     </div>
-    // );
+    return (
+        <div className='App'>
+            <Nav />
+            <Footer />
+        </div>
+    );
 };
 
 export default App;

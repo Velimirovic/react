@@ -8,7 +8,6 @@ const Pancake = ({item,onTodoClicked}) => {
         id="MainCard" 
         style={{width:'200px'}}
         onClick={()=> onTodoClicked(item)} 
-        className={item.isDone ? "done" : ""}
         >
             <div className="card-body" id="custom-font">
 
