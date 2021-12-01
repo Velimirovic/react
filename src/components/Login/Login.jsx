@@ -1,16 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Link } from "react-router-dom";
 import "./Login.css";
+import validator from 'validator';
 
 const Login = () => {
 
 
-    const handleChange = (event) => {
+        const [emailError, setEmailError] = useState('');
+        const validateEmail = (e) => {
 
-        event.persis
+            var email = e.traget.value;
 
-    }
-
+            if(validator.isEmail(email)){
+                setEmailError('Valid Email')
+            } else {
+                setEmailError('Enter valid!!')
+            }
+        }
 
 
     return (
@@ -33,8 +39,15 @@ const Login = () => {
                                     Email
                                 </label>
                                 <div className='col-sm-10'>
-                                    <input  className='form-control' id='inputEmail'/>
-                                    <small id="small-za-gresku-email"></small>
+                                    <input  className='form-control' type="text" id='userEmail' placeholder='Email' 
+                                    onChange={(e) => validateEmail(e)}>
+                                    </input>
+                                    <span 
+                                        style={{
+                                            fontWeight:'bold',
+                                            color: 'red',
+                                        }}
+                                    >{emailError}</span>
                                 </div>
                             </div>
                             <div className='form-group row mt-3'>
@@ -47,8 +60,8 @@ const Login = () => {
                                 </div>
                             </div>
                             <div className='form-group row mt-4'>
-                                <div className='col-sm-10'>
-                                    <button type='submit' className='btn btn-dark' id='submit'>
+                                <div className='col-sm-10 as'>
+                                    <button type='submit' className='btn btn-dark ad' id='submit'>
                                         Sign in
                                     </button>
                                 </div>

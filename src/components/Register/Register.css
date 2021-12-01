@@ -24,6 +24,12 @@ body {
     color: white;
 }
 
+.ad{float: left;
+
+    margin-left: 20px;
+    
+    }
+
 .nav-padding {
     padding-left: 40px;
     padding-right: 40px;

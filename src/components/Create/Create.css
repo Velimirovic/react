@@ -129,7 +129,7 @@ h2 {
 }
 
 .form-check {
-    display: inline-block;
+    display: inline-block !important;
     margin-left: 10px;
 }
 
